@@ -128,8 +128,6 @@
 
   "#emerald_ores": "emerald",
 
-  "ender_chest": "chest",
-
   "redstone_wire": [
     "redstone_torch",
     "lever"
