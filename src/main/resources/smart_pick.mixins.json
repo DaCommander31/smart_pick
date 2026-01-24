@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "dev.dacommander31.smart_pick.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MultiPlayerGameModeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+	}
+}

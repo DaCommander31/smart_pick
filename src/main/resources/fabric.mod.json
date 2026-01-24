@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "smart_pick",
+	"version": "${version}",
+	"name": "Smart Pick",
+	"description": "Makes the pick block function more useful by picking a close match if the exact block isn't found.",
+	"authors": [
+		"DaCommander31"
+	],
+	"contact": {
+	},
+	"license": "MIT",
+	"icon": "assets/smart_pick/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"dev.dacommander31.smart_pick.SmartPickClient"
+		],
+		"modmenu": [
+			"dev.dacommander31.smart_pick.modmenu.ModMenuApiImpl"
+		]
+	},
+	"mixins": [
+		"smart_pick.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "=1.21.11",
+		"java": ">=21",
+		"fabric-api": "*",
+		"cloth-config": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}

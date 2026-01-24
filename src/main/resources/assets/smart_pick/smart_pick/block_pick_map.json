@@ -1,0 +1,168 @@
+{
+  "stone": [
+    "cobblestone",
+    "andesite",
+    "diorite",
+    "granite"
+  ],
+
+  "cobblestone": "stone",
+
+  "dirt": [
+    "grass_block",
+    "coarse_dirt",
+    "rooted_dirt"
+  ],
+
+  "grass_block": [
+    "dirt",
+    "moss_block"
+  ],
+
+  "#sand": "#sand",
+
+  "gravel": "flint",
+
+  "$smart_pick:torches": "$smart_pick:torches",
+
+  "$smart_pick:furnaces": "$smart_pick:furnaces",
+
+  "$smart_pick:bricks": "$smart_pick:bricks",
+
+  "$smart_pick:chests": "$smart_pick:chests",
+
+  "#copper": "#copper",
+
+  "deepslate": "cobbled_deepslate",
+  
+  "cobbled_deepslate": "deepslate",
+
+  "#deepslate_ore_replaceables": "#deepslate_ore_replaceables",
+
+  "short_grass": [
+    "wheat_seeds",
+    "short_dry_grass",
+    "fern",
+    "bush"
+  ],
+
+  "tall_grass": [
+    "wheat_seeds",
+    "tall_dry_grass"
+  ],
+
+  "short_dry_grass": "short_grass",
+
+  "tall_dry_grass": "tall_grass",
+
+  "snow": "snowball",
+
+  "snow_block": "snowball",
+
+  "dead_bush": "stick",
+
+  "#logs": "#logs",
+
+  "#logs_that_burn": "#logs_that_burn",
+
+  "#planks": "#planks",
+
+  "#wooden_slabs": "#wooden_slabs",
+
+  "#wooden_stairs": "#wooden_stairs",
+
+  "#wooden_fences": "#wooden_fences",
+
+  "#wooden_buttons": "#wooden_buttons",
+
+  "#wooden_doors": "#wooden_doors",
+
+  "#wooden_trapdoors": "#wooden_trapdoors",
+
+  "#wooden_pressure_plates": "#wooden_pressure_plates",
+
+  "#stone": "#stone",
+
+  "#stone_slabs": "#stone_slabs",
+
+  "#stone_buttons": "#stone_buttons",
+
+  "#stone_stairs": "#stone_stairs",
+
+  "#stone_pressure_plates": "#stone_pressure_plates",
+
+  "#stone_bricks": "#stone_bricks",
+
+  "#walls": "#walls",
+
+  "#fence_gates": "#fence_gates",
+
+  "#wool": [
+    "#wool",
+    "#wool_carpets"
+  ],
+
+  "hay_block": "wheat",
+
+  "#wool_carpets": "#wool",
+
+  "$smart_pick:concrete": "$smart_pick:concrete",
+
+  "#concrete_powder": "#concrete_powder",
+
+  "#terracotta": "#terracotta",
+
+  "$smart_pick:glazed_terracotta": "$smart_click:glazed_terracotta",
+
+  "$smart_pick:ores": "$smart_pick:ores",
+
+  "#coal_ores": "coal",
+
+  "#iron_ores": "raw_iron",
+
+  "#gold_ores": "raw_gold",
+
+  "#copper_ores": "raw_copper",
+
+  "#diamond_ores": "diamond",
+
+  "#emerald_ores": "emerald",
+
+  "ender_chest": "chest",
+
+  "redstone_wire": [
+    "redstone_torch",
+    "lever"
+  ],
+
+  "repeater": "comparator",
+
+  "comparator": "repeater",
+
+  "observer": [
+    "dispenser",
+    "dropper"
+  ],
+
+  "dispenser": "dropper",
+
+  "dropper": "dispenser",
+
+  "#flowers": "#flowers",
+
+  "#leaves": [
+    "#leaves",
+    "#saplings"
+  ],
+
+  "moss_block": "grass_block",
+
+  "mud": [
+    "dirt",
+    "clay"
+  ],
+
+  "soul_sand": "soul_soil",
+
+  "soul_soil": "soul_sand"
+}
