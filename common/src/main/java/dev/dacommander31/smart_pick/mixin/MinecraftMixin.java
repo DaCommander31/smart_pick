@@ -24,7 +24,8 @@ import java.util.Map;
 
 @Mixin(Minecraft.class)
 public class MinecraftMixin {
-    @Shadow private static Minecraft instance;
+    @Shadow
+    static Minecraft instance;
 
     @Redirect(method = "pickBlock",
             at = @At(
