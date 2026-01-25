@@ -4,7 +4,8 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
-import dev.dacommander31.smart_pick.SmartPickClient;
+import dev.dacommander31.smart_pick.platform.Platform;
+import dev.dacommander31.smart_pick.platform.SmartPickPlatform;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -38,11 +39,13 @@ public class PickBlockMapParser {
                 continue;
             }
 
+            SmartPickPlatform platform = Platform.get();
+
             if (key.startsWith("#")) {
-                SmartPickClient.log("Recognised block tag {} containing {}", key, Arrays.toString(getItems(createTagKey(key)).toArray()));
+                platform.log("Recognised block tag {} containing {}", key, Arrays.toString(getItems(createTagKey(key)).toArray()));
                 for (Item keyItem : getItems(createTagKey(key))) {
                     List<Item> blockItemEntries = parseEntries(block, keyItem, null);
-                    SmartPickClient.log("Mapping item {} with {}", keyItem.toString(), Arrays.toString(blockItemEntries.toArray()));
+                    platform.log("Mapping item {} with {}", keyItem.toString(), Arrays.toString(blockItemEntries.toArray()));
                     map.putIfAbsent(keyItem, blockItemEntries);
                 }
             } else if (key.startsWith("$")) {
@@ -57,7 +60,7 @@ public class PickBlockMapParser {
                 rm.getResource(resourceId).ifPresent(resource -> {
                     List<Item> keyItems = ClientBlockTagParser.parse(resource, new HashSet<>());
 
-                    SmartPickClient.log(
+                    platform.log(
                             "Recognised client block tag {} containing {}",
                             key, keyItems
                     );
@@ -71,7 +74,7 @@ public class PickBlockMapParser {
             } else {
                 Item keyItem = getItem(key);
                 List<Item> blockItemEntries = parseEntries(block, keyItem, null);
-                SmartPickClient.log("Mapping item {} with {}", keyItem, Arrays.toString(blockItemEntries.toArray()));
+                platform.log("Mapping item {} with {}", keyItem, Arrays.toString(blockItemEntries.toArray()));
                 map.put(keyItem, blockItemEntries);
             }
 

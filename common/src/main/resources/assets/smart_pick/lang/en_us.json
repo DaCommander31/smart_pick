@@ -4,5 +4,9 @@
   "text.autoconfig.smart_pick.option.actionbarMessages": "Display Actionbar Messages",
   "text.autoconfig.smart_pick.option.debugLog": "Log Debug Messages",
 
+  "smart_pick.configuration.enabled": "Smart Pick Enabled",
+  "smart_pick.configuration.actionbarMessages": "Display Actionbar Messages",
+  "smart_pick.configuration.debugLog": "Log Debug Messages",
+
   "smart_pick.pick": "Picked block not found. Close match selected."
 }

@@ -1,7 +1,7 @@
 package dev.dacommander31.smart_pick.mixin;
 
-import dev.dacommander31.smart_pick.SmartPickClient;
-import dev.dacommander31.smart_pick.SmartPickConfig;
+import dev.dacommander31.smart_pick.platform.Platform;
+import dev.dacommander31.smart_pick.platform.SmartPickPlatform;
 import dev.dacommander31.smart_pick.util.PickBlockCache;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -30,8 +30,8 @@ public class MultiPlayerGameModeMixin {
 
     @Inject(method = "handlePickItemFromBlock", at = @At("HEAD"), cancellable = true)
     public void handleSmartPickLogic(BlockPos blockPos, boolean bl, CallbackInfo ci) {
-        SmartPickConfig config = SmartPickClient.getConfig();
-        if (!config.enabled) return;
+        SmartPickPlatform platform = Platform.get();
+        if (!platform.isEnabled()) return;
 
         ClientLevel level = minecraft.level;
         LocalPlayer player = minecraft.player;
@@ -45,7 +45,7 @@ public class MultiPlayerGameModeMixin {
         int slot = getMatchingSlot(targetBlockItem, map, inventory);
         if (slot == -1) return;
 
-        if (config.actionbarMessages) {
+        if (platform.actionbarMessages()) {
             minecraft.gui.setOverlayMessage(Component.translatable("smart_pick.pick"), false);
         }
 
@@ -54,7 +54,7 @@ public class MultiPlayerGameModeMixin {
         } else {
             inventory.pickSlot(slot);
             if (minecraft.gameMode != null) {
-                SmartPickClient.log("Sending server packet");
+                platform.log("Sending server packet");
                 minecraft.gameMode.handleInventoryMouseClick(
                         player.containerMenu.containerId,
                         slot,

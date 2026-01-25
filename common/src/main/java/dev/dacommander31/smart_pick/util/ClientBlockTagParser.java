@@ -1,7 +1,7 @@
 package dev.dacommander31.smart_pick.util;
 
 import com.google.gson.*;
-import dev.dacommander31.smart_pick.SmartPickClient;
+import dev.dacommander31.smart_pick.platform.Platform;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.packs.resources.Resource;
@@ -36,7 +36,7 @@ public class ClientBlockTagParser {
             return parseEntries(values, visited);
 
         } catch (IOException e) {
-            SmartPickClient.LOGGER.error(
+            Platform.get().error(
                     "Failed to read client block tag at {}", id, e
             );
             return List.of();

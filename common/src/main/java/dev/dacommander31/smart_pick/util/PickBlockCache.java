@@ -2,7 +2,7 @@ package dev.dacommander31.smart_pick.util;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import dev.dacommander31.smart_pick.SmartPickClient;
+import dev.dacommander31.smart_pick.platform.Platform;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.packs.resources.Resource;
@@ -39,11 +39,11 @@ public class PickBlockCache {
                      new InputStreamReader(resource.open(), StandardCharsets.UTF_8)) {
 
             JsonObject obj = JsonParser.parseReader(reader).getAsJsonObject();
-            SmartPickClient.log("Successfully loaded block pick map for {}", id);
+            Platform.get().log("Successfully loaded block pick map for {}", id);
             CACHE.putAll(PickBlockMapParser.parse(obj));
 
         } catch (Exception e) {
-            SmartPickClient.LOGGER.error(
+            Platform.get().error(
                     "Failed to load Smart Pick map from {}", id, e
             );
         }
@@ -58,7 +58,7 @@ public class PickBlockCache {
 
         @Override
         protected void apply(Void object, ResourceManager resourceManager, ProfilerFiller profilerFiller) {
-            SmartPickClient.log("Clearing block pick cache.");
+            Platform.get().log("Clearing block pick cache.");
             CACHE.clear();
         }
     }
