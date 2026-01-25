@@ -49,6 +49,10 @@ public class PickBlockCache {
         }
     }
 
+    public static void clear() {
+        CACHE.clear();
+    }
+
     public static class ReloadListener extends SimplePreparableReloadListener<Void> {
 
         @Override

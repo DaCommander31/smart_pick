@@ -5,9 +5,11 @@ import dev.dacommander31.smart_pick.util.PickBlockCache;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.Toml4jConfigSerializer;
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.resource.v1.ResourceLoader;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
+import net.minecraft.server.packs.resources.ResourceManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,7 +20,7 @@ public class SmartPickClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloader(ResourceLocation.fromNamespaceAndPath(MOD_ID, "clear_bp_cache"), new PickBlockCache.ReloadListener());
+		ResourceManagerHelper.get(PackType.CLIENT_RESOURCES).registerReloadListener(new ReloadListener());
 
 		AutoConfig.register(SmartPickConfig.class, Toml4jConfigSerializer::new);
 
@@ -27,5 +29,19 @@ public class SmartPickClient implements ClientModInitializer {
 
 	public static SmartPickConfig getConfig() {
 		return AutoConfig.getConfigHolder(SmartPickConfig.class).getConfig();
+	}
+
+	private static class ReloadListener implements SimpleSynchronousResourceReloadListener {
+
+		@Override
+		public ResourceLocation getFabricId() {
+			return ResourceLocation.fromNamespaceAndPath(MOD_ID, "clear_bp_cache");
+		}
+
+		@Override
+		public void onResourceManagerReload(ResourceManager resourceManager) {
+			Platform.get().log("Clearing block pick cache.");
+			PickBlockCache.clear();
+		}
 	}
 }
