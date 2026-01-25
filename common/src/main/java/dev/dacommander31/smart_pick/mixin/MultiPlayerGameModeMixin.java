@@ -50,7 +50,7 @@ public class MultiPlayerGameModeMixin {
         }
 
         if (Inventory.isHotbarSlot(slot)) {
-            inventory.setSelectedSlot(slot);
+            inventory.setSelectedHotbarSlot(slot);
         } else {
             inventory.pickSlot(slot);
             if (minecraft.gameMode != null) {
@@ -58,7 +58,7 @@ public class MultiPlayerGameModeMixin {
                 minecraft.gameMode.handleInventoryMouseClick(
                         player.containerMenu.containerId,
                         slot,
-                        inventory.getSelectedSlot(),
+                        inventory.selected,
                         ClickType.SWAP,
                         player
                 );
