@@ -111,7 +111,7 @@ public class PickBlockMapParser {
     }
 
     public static Item getItem(String id) {
-        return BuiltInRegistries.ITEM.getValue(ResourceLocation.parse(id));
+        return BuiltInRegistries.ITEM.get(ResourceLocation.parse(id));
     }
 
     public static List<Item> getItems(TagKey<Block> blockTag) {

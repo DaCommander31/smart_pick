@@ -9,7 +9,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
-import net.neoforged.neoforge.client.event.AddClientReloadListenersEvent;
+import net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import org.slf4j.Logger;
@@ -29,7 +29,7 @@ public class SmartPickClient {
 	}
 
 	@SubscribeEvent
-	public static void registerReloadListeners(AddClientReloadListenersEvent event) {
-		event.addListener(ResourceLocation.fromNamespaceAndPath(MOD_ID, "clear_bp_cache"), new PickBlockCache.ReloadListener());
+	public static void registerReloadListeners(RegisterClientReloadListenersEvent event) {
+		event.registerReloadListener(new PickBlockCache.ReloadListener());
 	}
 }
