@@ -2,7 +2,7 @@ package dev.dacommander31.smart_pick;
 
 import dev.dacommander31.smart_pick.platform.Platform;
 import dev.dacommander31.smart_pick.util.PickBlockCache;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -30,6 +30,6 @@ public class SmartPickClient {
 
 	@SubscribeEvent
 	public static void registerReloadListeners(AddClientReloadListenersEvent event) {
-		event.addListener(Identifier.fromNamespaceAndPath(MOD_ID, "clear_bp_cache"), new PickBlockCache.ReloadListener());
+		event.addListener(ResourceLocation.fromNamespaceAndPath(MOD_ID, "clear_bp_cache"), new PickBlockCache.ReloadListener());
 	}
 }

@@ -16,14 +16,14 @@ logoFile = "icon.png"
 [[dependencies.smart_pick]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21.11,)"
+versionRange = "[21.5,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.smart_pick]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.11,)"
+versionRange = "[1.21.5,1.21.11)"
 ordering = "NONE"
 side = "BOTH"
 

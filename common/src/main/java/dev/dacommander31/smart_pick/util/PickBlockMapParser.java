@@ -10,7 +10,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.tags.TagKey;
@@ -49,10 +49,10 @@ public class PickBlockMapParser {
                     map.putIfAbsent(keyItem, blockItemEntries);
                 }
             } else if (key.startsWith("$")) {
-                Identifier id = Identifier.parse(key.substring(1));
+                ResourceLocation id = ResourceLocation.parse(key.substring(1));
                 ResourceManager rm = Minecraft.getInstance().getResourceManager();
 
-                Identifier resourceId = Identifier.fromNamespaceAndPath(
+                ResourceLocation resourceId = ResourceLocation.fromNamespaceAndPath(
                         id.getNamespace(),
                         "smart_pick/block_tags/" + id.getPath() + ".json"
                 );
@@ -111,7 +111,7 @@ public class PickBlockMapParser {
     }
 
     public static Item getItem(String id) {
-        return BuiltInRegistries.ITEM.getValue(Identifier.parse(id));
+        return BuiltInRegistries.ITEM.getValue(ResourceLocation.parse(id));
     }
 
     public static List<Item> getItems(TagKey<Block> blockTag) {
@@ -127,6 +127,6 @@ public class PickBlockMapParser {
     }
 
     public static TagKey<Block> createTagKey(String string) {
-        return TagKey.create(Registries.BLOCK, Identifier.parse(string.substring(1)));
+        return TagKey.create(Registries.BLOCK, ResourceLocation.parse(string.substring(1)));
     }
 }

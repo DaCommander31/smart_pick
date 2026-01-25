@@ -4,7 +4,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import dev.dacommander31.smart_pick.platform.Platform;
 import net.minecraft.client.Minecraft;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.server.packs.resources.SimplePreparableReloadListener;
@@ -34,7 +34,7 @@ public class PickBlockCache {
     }
 
 
-    private static void load(Resource resource, Identifier id) {
+    private static void load(Resource resource, ResourceLocation id) {
         try (InputStreamReader reader =
                      new InputStreamReader(resource.open(), StandardCharsets.UTF_8)) {
 

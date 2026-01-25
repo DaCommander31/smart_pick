@@ -6,7 +6,7 @@ import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.Toml4jConfigSerializer;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.resource.v1.ResourceLoader;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +18,7 @@ public class SmartPickClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloader(Identifier.fromNamespaceAndPath(MOD_ID, "clear_bp_cache"), new PickBlockCache.ReloadListener());
+		ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloader(ResourceLocation.fromNamespaceAndPath(MOD_ID, "clear_bp_cache"), new PickBlockCache.ReloadListener());
 
 		AutoConfig.register(SmartPickConfig.class, Toml4jConfigSerializer::new);
 

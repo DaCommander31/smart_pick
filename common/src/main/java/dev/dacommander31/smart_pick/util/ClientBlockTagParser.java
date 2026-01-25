@@ -3,7 +3,7 @@ package dev.dacommander31.smart_pick.util;
 import com.google.gson.*;
 import dev.dacommander31.smart_pick.platform.Platform;
 import net.minecraft.client.Minecraft;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.tags.TagKey;
@@ -56,9 +56,9 @@ public class ClientBlockTagParser {
                 entries.addAll(PickBlockMapParser.getItems(tag));
 
             } else if (id.startsWith("$")) {
-                Identifier ref = Identifier.parse(id.substring(1));
+                ResourceLocation ref = ResourceLocation.parse(id.substring(1));
 
-                Identifier resourceId = Identifier.fromNamespaceAndPath(
+                ResourceLocation resourceId = ResourceLocation.fromNamespaceAndPath(
                         ref.getNamespace(),
                         "smart_pick/block_tags/" + ref.getPath() + ".json"
                 );
