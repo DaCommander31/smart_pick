@@ -36,10 +36,12 @@ public class MultiPlayerGameModeMixin {
         ClientLevel level = minecraft.level;
         LocalPlayer player = minecraft.player;
         if (level == null || player == null) return;
-        if (player.hasInfiniteMaterials()) return;
-        Inventory inventory = player.getInventory();
 
         ItemStack targetBlockItem = level.getBlockState(blockPos).getCloneItemStack(level, blockPos, false);
+
+        Inventory inventory = player.getInventory();
+        if (player.hasInfiniteMaterials() || inventory.contains(targetBlockItem)) return;
+
         Map<Item, List<Item>> map = PickBlockCache.getCache();
 
         int slot = getMatchingSlot(targetBlockItem, map, inventory);
