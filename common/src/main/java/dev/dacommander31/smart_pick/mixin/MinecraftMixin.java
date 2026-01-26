@@ -4,7 +4,6 @@ import dev.dacommander31.smart_pick.platform.Platform;
 import dev.dacommander31.smart_pick.platform.SmartPickPlatform;
 import dev.dacommander31.smart_pick.util.PickBlockCache;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
