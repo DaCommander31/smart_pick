@@ -5,6 +5,7 @@ import dev.dacommander31.smart_pick.util.PickBlockCache;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
@@ -21,8 +22,7 @@ public class MinecraftMixin {
     @Shadow
     static Minecraft instance;
 
-    @Shadow
-    @Nullable
+    @Shadow @Nullable
     public LocalPlayer player;
 
     @ModifyVariable(
@@ -33,7 +33,9 @@ public class MinecraftMixin {
             ordinal = 0
     )
     private ItemStack smartPick$modifyPickedStack(ItemStack stack) {
-        if (stack.isEmpty()) return stack;
+        assert player != null;
+        Inventory inventory = player.getInventory();
+        if (stack.isEmpty() || inventory.contains(stack) || player.getAbilities().instabuild) return stack;
 
         Map<Item, List<Item>> map = PickBlockCache.getCache();
 
@@ -42,7 +44,7 @@ public class MinecraftMixin {
 
             if (!stack.is(targetItem)) continue;
 
-            assert player != null;
+
             for (Item item : entry.getValue()) {
                 if (player.getInventory().hasAnyMatching(itemStack -> itemStack.is(item))) {
                     if (Platform.get().actionbarMessages()) {
