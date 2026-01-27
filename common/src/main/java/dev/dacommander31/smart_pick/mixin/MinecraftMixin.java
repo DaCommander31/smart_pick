@@ -1,6 +1,7 @@
 package dev.dacommander31.smart_pick.mixin;
 
 import dev.dacommander31.smart_pick.platform.Platform;
+import dev.dacommander31.smart_pick.platform.SmartPickPlatform;
 import dev.dacommander31.smart_pick.util.PickBlockCache;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
@@ -35,7 +36,8 @@ public class MinecraftMixin {
     private ItemStack smartPick$modifyPickedStack(ItemStack stack) {
         assert player != null;
         Inventory inventory = player.getInventory();
-        if (stack.isEmpty() || inventory.contains(stack) || player.getAbilities().instabuild) return stack;
+        SmartPickPlatform platform = Platform.get();
+        if (stack.isEmpty() || inventory.contains(stack) || player.getAbilities().instabuild || platform.isEnabled()) return stack;
 
         Map<Item, List<Item>> map = PickBlockCache.getCache();
 
@@ -47,7 +49,7 @@ public class MinecraftMixin {
 
             for (Item item : entry.getValue()) {
                 if (player.getInventory().hasAnyMatching(itemStack -> itemStack.is(item))) {
-                    if (Platform.get().actionbarMessages()) {
+                    if (platform.actionbarMessages()) {
                         instance.gui.setOverlayMessage(Component.translatable("smart_pick.pick"), false);
                     }
                     return new ItemStack(item);
