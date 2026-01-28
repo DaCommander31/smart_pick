@@ -1,0 +1,37 @@
+modLoader = "javafml"
+loaderVersion = "[49,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "smart_pick"
+version = "${version}"
+displayName = "Smart Pick"
+authors = "DaCommander31"
+description = '''
+Makes the pick block function more useful by picking a close match if the exact block isn't found.
+'''
+logoFile = "icon.png"
+
+[[dependencies.smart_pick]]
+modId = "forge"
+mandatory = true
+versionRange = "[49,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.smart_pick]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.smart_pick]]
+modId="cloth_config"
+mandatory = true
+versionRange="[11,)"
+side="CLIENT"
+
+[[mixins]]
+config = "smart_pick.mixins.json"

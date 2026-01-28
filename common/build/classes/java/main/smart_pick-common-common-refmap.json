@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "dev/dacommander31/smart_pick/mixin/MinecraftMixin": {
+      "pickBlock": "Lnet/minecraft/class_310;method_1511()V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "dev/dacommander31/smart_pick/mixin/MinecraftMixin": {
+        "pickBlock": "Lnet/minecraft/class_310;method_1511()V"
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 2026-01-26 20:40:17
+Description: Mod loading error has occurred
+
+java.lang.Exception: Mod Loading has failed
+	at net.neoforged.neoforge.logging.CrashReportExtender.dumpModLoadingCrashReport(CrashReportExtender.java:55) ~[neoforge-20.4.251-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-neoforge-20.4.251.jar%23189%23192!/:?] {re:classloading}
+	at net.neoforged.neoforge.client.loading.ClientModLoader.completeModLoading(ClientModLoader.java:125) ~[neoforge-20.4.251-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-neoforge-20.4.251.jar%23189%23192!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.buildInitialScreens(Minecraft.java:679) ~[neoforge-20.4.251-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-neoforge-20.4.251.jar%23190!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.onGameLoadFinished(Minecraft.java:652) ~[neoforge-20.4.251-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-neoforge-20.4.251.jar%23190!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.onResourceLoadFinished(Minecraft.java:647) ~[neoforge-20.4.251-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-neoforge-20.4.251.jar%23190!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.lambda$new$6(Minecraft.java:635) ~[neoforge-20.4.251-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-neoforge-20.4.251.jar%23190!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,pl:runtimedistcleaner:A}
+	at net.minecraft.Util.ifElse(Util.java:425) ~[neoforge-20.4.251-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-neoforge-20.4.251.jar%23190!/:?] {re:classloading,pl:unprotect:A}
+	at net.minecraft.client.Minecraft.lambda$new$7(Minecraft.java:629) ~[neoforge-20.4.251-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-neoforge-20.4.251.jar%23190!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,pl:runtimedistcleaner:A}
+	at net.neoforged.neoforge.client.loading.NeoForgeLoadingOverlay.render(NeoForgeLoadingOverlay.java:146) ~[neoforge-20.4.251-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-neoforge-20.4.251.jar%23189%23192!/:?] {re:classloading}
+	at net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:1128) ~[neoforge-20.4.251-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-neoforge-20.4.251.jar%23190!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1263) ~[neoforge-20.4.251-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-neoforge-20.4.251.jar%23190!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:818) ~[neoforge-20.4.251-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-neoforge-20.4.251.jar%23190!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:244) ~[neoforge-20.4.251-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-neoforge-20.4.251.jar%23190!/:?] {re:classloading,pl:unprotect:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-2.0.17.jar%23125!/:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-2.0.17.jar%23125!/:2.0] {}
+	at net.neoforged.fml.loading.targets.ForgeClientUserdevLaunchHandler.runService(ForgeClientUserdevLaunchHandler.java:19) ~[loader-2.0.17.jar%23125!/:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-2.0.17.jar%23125!/:2.0] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%23111!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%23111!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%23111!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%23111!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%23111!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%23111!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%23111!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[?:?] {}
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar%23187!/:?] {}
+	at dev.architectury.transformer.TransformerRuntime.main(TransformerRuntime.java:220) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.neoforged.neoforge.common.NeoForge.lambda$static$0(NeoForge.java:19) ~[neoforge-20.4.251-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-neoforge-20.4.251.jar%23189%23192!/:?] {re:classloading}
+-- MOD smart_pick --
+Details:
+	Caused by 0: java.lang.IllegalArgumentException: Method public static void dev.dacommander31.smart_pick.SmartPickClient.registerReloadListeners(net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent) has @SubscribeEvent annotation, but takes an argument that is not valid for this busclass net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent
+		at net.neoforged.bus.EventBus.registerListener(EventBus.java:164) ~[bus-7.2.0.jar%23134!/:?] {}
+		at net.neoforged.bus.EventBus.register(EventBus.java:91) ~[bus-7.2.0.jar%23134!/:?] {}
+		at net.neoforged.fml.javafmlmod.AutomaticEventSubscriber.lambda$inject$6(AutomaticEventSubscriber.java:70) ~[loader-2.0.17.jar%23125!/:2.0] {}
+		at java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?] {}
+		at net.neoforged.fml.javafmlmod.AutomaticEventSubscriber.inject(AutomaticEventSubscriber.java:50) ~[loader-2.0.17.jar%23125!/:2.0] {}
+		at net.neoforged.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:123) ~[loader-2.0.17.jar%23125!/:2.0] {}
+		at net.neoforged.fml.ModContainer.lambda$buildTransitionHandler$10(ModContainer.java:129) ~[loader-2.0.17.jar%23125!/:2.0] {}
+		at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+		at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+		at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?] {re:computing_frames}
+		at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?] {re:computing_frames}
+		at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?] {}
+
+	Mod File: /E:/Minecraft Modding Workspaces/smart_pick-1.20.x/neoforge/build/resources/main/
+	Failure message: Smart Pick (smart_pick) has failed to load correctly
+		java.lang.IllegalArgumentException: Method public static void dev.dacommander31.smart_pick.SmartPickClient.registerReloadListeners(net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent) has @SubscribeEvent annotation, but takes an argument that is not valid for this busclass net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent
+	Mod Version: 1.0.0-1.20.4
+	Mod Issue URL: NOT PROVIDED
+	Exception message: java.lang.IllegalArgumentException: IModBusEvent events are not allowed on the common NeoForge bus! Use a mod bus instead.
+Stacktrace:
+	at net.neoforged.neoforge.common.NeoForge.lambda$static$0(NeoForge.java:19) ~[neoforge-20.4.251-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-neoforge-20.4.251.jar%23189%23192!/:?] {re:classloading}
+	at net.neoforged.bus.EventBus.registerListener(EventBus.java:162) ~[bus-7.2.0.jar%23134!/:?] {}
+	at net.neoforged.bus.EventBus.register(EventBus.java:91) ~[bus-7.2.0.jar%23134!/:?] {}
+	at net.neoforged.fml.javafmlmod.AutomaticEventSubscriber.lambda$inject$6(AutomaticEventSubscriber.java:70) ~[loader-2.0.17.jar%23125!/:2.0] {}
+	at java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?] {}
+	at net.neoforged.fml.javafmlmod.AutomaticEventSubscriber.inject(AutomaticEventSubscriber.java:50) ~[loader-2.0.17.jar%23125!/:2.0] {}
+	at net.neoforged.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:123) ~[loader-2.0.17.jar%23125!/:2.0] {}
+	at net.neoforged.fml.ModContainer.lambda$buildTransitionHandler$10(ModContainer.java:129) ~[loader-2.0.17.jar%23125!/:2.0] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?] {re:computing_frames}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?] {re:computing_frames}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.4
+	Minecraft Version ID: 1.20.4
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.6, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 259680872 bytes (247 MiB) / 1101004800 bytes (1050 MiB) up to 4246732800 bytes (4050 MiB)
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: 12th Gen Intel(R) Core(TM) i5-12400F
+	Identifier: Intel64 Family 6 Model 151 Stepping 5
+	Microarchitecture: Alder Lake
+	Frequency (GHz): 2.50
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: NVIDIA GeForce RTX 3060
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x2487
+	Graphics card #0 versionInfo: DriverVersion=32.0.15.6636
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: Unknown
+	Virtual memory max (MB): 35653.42
+	Virtual memory used (MB): 30593.27
+	Swap memory total (MB): 19456.00
+	Swap memory used (MB): 2737.55
+	JVM Flags: 0 total; 
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		sponge-mixin-0.13.4+mixin.0.8.5.jar mixin PLUGINSERVICE 
+		loader-2.0.17.jar slf4jfixer PLUGINSERVICE 
+		loader-2.0.17.jar runtime_enum_extender PLUGINSERVICE 
+		unprotect-modlauncher-2.0.2.jar unprotect PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-2.0.17.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar mixin-synthetic-package TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@2.0
+		lowcodefml@2.0
+		minecraft@2.0
+	Mod List: 
+		neoforge-20.4.251-minecraft-merged-1.20.4-loom.map|Minecraft                     |minecraft                     |1.20.4              |COMMON_SET|Manifest: NOSIGNATURE
+		5501704187401009255.jar                           |generated_8c59e73             |generated_8c59e73             |1                   |COMMON_SET|Manifest: NOSIGNATURE
+		                                                  |NeoForge                      |neoforge                      |20.4.251            |COMMON_SET|Manifest: NOSIGNATURE
+		main                                              |Smart Pick                    |smart_pick                    |1.0.0-1.20.4        |ERROR     |Manifest: NOSIGNATURE
+	Crash Report UUID: 4c523378-2c34-4803-82a7-17a24047316d
+	FML: 20.4
+	NeoForge: net.neoforged:20.4.251

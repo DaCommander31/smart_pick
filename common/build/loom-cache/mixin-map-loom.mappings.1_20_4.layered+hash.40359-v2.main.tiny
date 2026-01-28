@@ -1,0 +1,3 @@
+v1	named	intermediary
+FIELD	dev/dacommander31/smart_pick/mixin/MinecraftMixin	Lnet/minecraft/client/Minecraft;	instance	field_1700
+FIELD	dev/dacommander31/smart_pick/mixin/MinecraftMixin	Lnet/minecraft/client/player/LocalPlayer;	player	field_1724
