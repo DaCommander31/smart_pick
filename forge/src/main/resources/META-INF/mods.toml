@@ -16,14 +16,14 @@ logoFile = "icon.png"
 [[dependencies.smart_pick]]
 modId = "forge"
 mandatory = true
-versionRange = "[49,)"
+versionRange = "[48,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.smart_pick]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.20.4,)"
+versionRange = "[1.20.2,)"
 ordering = "NONE"
 side = "BOTH"
 

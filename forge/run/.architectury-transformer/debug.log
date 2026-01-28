@@ -109,20 +109,20 @@
 [Architectury Transformer DEBUG]  - E:\GradleFiles\caches\fabric-loom\minecraftMaven\net\minecraft\forge-1.20.4-49.2.2-minecraft-merged\1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-forge-1.20.4-49.2.2\forge-1.20.4-49.2.2-minecraft-merged-1.20.4-loom.mappings.1_20_4.layered+hash.40359-v2-forge-1.20.4-49.2.2.jar
 [Architectury Transformer DEBUG]  - E:\GradleFiles\caches\modules-2\files-2.1\io.netty\netty-transport-native-epoll\4.1.97.Final\54188f271e388e7f313aea995e82f58ce2cdb809\netty-transport-native-epoll-4.1.97.Final-linux-x86_64.jar
 [Architectury Transformer DEBUG]  - E:\GradleFiles\caches\modules-2\files-2.1\io.netty\netty-transport-native-epoll\4.1.97.Final\5514744c588190ffda076b35a9b8c9f24946a960\netty-transport-native-epoll-4.1.97.Final-linux-aarch_64.jar
-[Architectury Transformer] Read classpath in 1.376 s
+[Architectury Transformer] Read classpath in 2.198 s
 [Architectury Transformer DEBUG] Closed File Systems for E:\Minecraft Modding Workspaces\smart_pick-1.20.x\common\build\devlibs\smart_pick-common-1.0.0-1.20.4-dev.jar
-[Architectury Transformer DEBUG] Transforming 8 transformer(s) from E:\Minecraft Modding Workspaces\smart_pick-1.20.x\common\build\devlibs\smart_pick-common-1.0.0-1.20.4-dev.jar to C:\Users\User\AppData\Local\Temp\1836731789489229161.jar: 
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@aecb35a
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@5fcd892a
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@8b87145
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@6483f5ae
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformForgeAnnotations@b9afc07
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformForgeEnvironment@382db087
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeForgeMod@73d4cc9e
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.FixForgeMixin@80169cf
-[Architectury Transformer DEBUG] Transforming from E:\Minecraft Modding Workspaces\smart_pick-1.20.x\common\build\devlibs\smart_pick-common-1.0.0-1.20.4-dev.jar to C:\Users\User\AppData\Local\Temp\1836731789489229161.jar with 8 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
+[Architectury Transformer DEBUG] Transforming 8 transformer(s) from E:\Minecraft Modding Workspaces\smart_pick-1.20.x\common\build\devlibs\smart_pick-common-1.0.0-1.20.4-dev.jar to C:\Users\User\AppData\Local\Temp\6909913476486594776.jar: 
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@4e4aea35
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@1442d7b5
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@1efee8e7
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@1ee807c6
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformForgeAnnotations@76a4d6c
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformForgeEnvironment@517cd4b
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeForgeMod@6cc7b4de
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.FixForgeMixin@32cf48b7
+[Architectury Transformer DEBUG] Transforming from E:\Minecraft Modding Workspaces\smart_pick-1.20.x\common\build\devlibs\smart_pick-common-1.0.0-1.20.4-dev.jar to C:\Users\User\AppData\Local\Temp\6909913476486594776.jar with 8 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformForgeEnvironment$$Lambda/0x000001b5a008a788@3b2c72c2
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformForgeEnvironment$$Lambda$102/0x000001c1230cacd8@2890c451
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/minecraftforge/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/minecraftforge/api/distmarker/OnlyIn
@@ -131,8 +131,8 @@
 [Architectury Transformer DEBUG] Writing dev/dacommander31/smart_pick/platform/Platform with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing dev/dacommander31/smart_pick/platform/SmartPickPlatform with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing dev/dacommander31/smart_pick/util/PickBlockMapParser with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing dev/dacommander31/smart_pick/util/PickBlockCache with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing dev/dacommander31/smart_pick/util/PickBlockCache$ReloadListener with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing dev/dacommander31/smart_pick/util/PickBlockCache with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing dev/dacommander31/smart_pick/util/ClientBlockTagParser with maxs=true frames=true
 [Architectury Transformer DEBUG] Checking whether /smart_pick-common-common-refmap.json is a mixin config.
 [Architectury Transformer DEBUG] Checking whether /smart_pick.mixins.json is a mixin config.
@@ -141,8 +141,8 @@
 [Architectury Transformer DEBUG] Found mixin config(s): smart_pick.mixins.json
 [Architectury Transformer DEBUG] Appended Launch Argument: [--mixin.config, smart_pick.mixins.json]
 [Architectury Transformer DEBUG] Remapping refmap from intermediary to srg: smart_pick-forge-forge-refmap.json
-[Architectury Transformer DEBUG] Closed File Systems for C:\Users\User\AppData\Local\Temp\1836731789489229161.jar
+[Architectury Transformer DEBUG] Closed File Systems for C:\Users\User\AppData\Local\Temp\6909913476486594776.jar
 [Architectury Transformer] Listening at E:\Minecraft Modding Workspaces\smart_pick-1.20.x\common\build\devlibs\smart_pick-common-1.0.0-1.20.4-dev.jar
-[Architectury Transformer DEBUG] Temporary jar [C:\Users\User\AppData\Local\Temp\1836731789489229161.jar] contains packages: dev.dacommander31.smart_pick.util, dev.dacommander31.smart_pick.platform, dev.dacommander31.smart_pick.mixin
+[Architectury Transformer DEBUG] Temporary jar [C:\Users\User\AppData\Local\Temp\6909913476486594776.jar] contains packages: dev.dacommander31.smart_pick.util, dev.dacommander31.smart_pick.platform, dev.dacommander31.smart_pick.mixin
 [Architectury Transformer DEBUG] Closed File Systems for E:\Minecraft Modding Workspaces\smart_pick-1.20.x\common\build\devlibs\smart_pick-common-1.0.0-1.20.4-dev.jar
 [Architectury Transformer DEBUG] Classpath entry [E:\Minecraft Modding Workspaces\smart_pick-1.20.x\forge\build\resources\main] contains packages: 

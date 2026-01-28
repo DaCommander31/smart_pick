@@ -21,7 +21,6 @@ public class SmartPickClient {
 
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	@SuppressWarnings("removal")
 	@Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientModEvents {
 		@SubscribeEvent
