@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[49,)"
+loaderVersion = "[48,)"
 #issueTrackerURL = ""
 license = "MIT"
 
@@ -30,7 +30,7 @@ side = "BOTH"
 [[dependencies.smart_pick]]
 modId="cloth_config"
 mandatory = true
-versionRange="[11,)"
+versionRange="[12,)"
 side="CLIENT"
 
 [[mixins]]

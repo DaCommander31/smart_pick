@@ -1,11 +1,11 @@
 modLoader = "javafml"
-loaderVersion = "[2,)"
+loaderVersion = "[1,)"
 #issueTrackerURL = ""
 license = "MIT"
 
 [[mods]]
 modId = "smart_pick"
-version = "1.0.0-1.20.4"
+version = "1.0.0-1.20.2"
 displayName = "Smart Pick"
 authors = "DaCommander31"
 description = '''
@@ -16,21 +16,21 @@ logoFile = "icon.png"
 [[dependencies.smart_pick]]
 modId = "neoforge"
 type = "required"
-versionRange = "[20.4,)"
+versionRange = "[20.2,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.smart_pick]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.20.4,)"
+versionRange = "[1.20.2,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.smart_pick]]
 modId="cloth_config"
 type="required"
-versionRange="[11,)"
+versionRange="[12,)"
 side="CLIENT"
 
 [[mixins]]

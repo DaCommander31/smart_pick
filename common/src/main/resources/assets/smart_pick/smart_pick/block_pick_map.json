@@ -55,9 +55,23 @@
 
   "tall_dry_grass": "tall_grass",
 
-  "snow": "snowball",
+  "snow": [
+    "snowball",
+    "snow_block"
+  ],
 
-  "snow_block": "snowball",
+  "snow_block": [
+    "snowball",
+    "snow"
+  ],
+
+  "powdered_snow": [
+    "snow_block",
+    "snow",
+    "snowball"
+  ],
+
+  "$smart_pick:ice": "$smart_pick:ice",
 
   "dead_bush": "stick",
 

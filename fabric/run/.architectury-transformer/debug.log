@@ -112,15 +112,15 @@
 [Architectury Transformer DEBUG]  - E:\Minecraft Modding Workspaces\smart_pick-1.20.x\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-transitive-access-wideners-v1-c28a06bc\5.0.3+fce67b32a0\fabric-transitive-access-wideners-v1-c28a06bc-5.0.3+fce67b32a0.jar
 [Architectury Transformer DEBUG]  - E:\Minecraft Modding Workspaces\smart_pick-1.20.x\.gradle\loom-cache\remapped_mods\remapped\me\shedaniel\cloth\cloth-config-fabric-c28a06bc\12.0.137\cloth-config-fabric-c28a06bc-12.0.137-fabric.jar
 [Architectury Transformer DEBUG]  - E:\Minecraft Modding Workspaces\smart_pick-1.20.x\.gradle\loom-cache\remapped_mods\remapped\me\shedaniel\cloth\basic-math-c28a06bc\0.6.1\basic-math-c28a06bc-0.6.1.jar
-[Architectury Transformer] Read classpath in 2.187 s
+[Architectury Transformer] Read classpath in 1.464 s
 [Architectury Transformer DEBUG] Closed File Systems for E:\Minecraft Modding Workspaces\smart_pick-1.20.x\common\build\devlibs\smart_pick-common-1.0.0-1.20.2-dev.jar
-[Architectury Transformer DEBUG] Transforming 5 transformer(s) from E:\Minecraft Modding Workspaces\smart_pick-1.20.x\common\build\devlibs\smart_pick-common-1.0.0-1.20.2-dev.jar to C:\Users\User\AppData\Local\Temp\6395309655443761569.jar: 
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@24a35978
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeFabricMod@16f7c8c1
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@2f0a87b3
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@319b92f3
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@fcd6521
-[Architectury Transformer DEBUG] Transforming from E:\Minecraft Modding Workspaces\smart_pick-1.20.x\common\build\devlibs\smart_pick-common-1.0.0-1.20.2-dev.jar to C:\Users\User\AppData\Local\Temp\6395309655443761569.jar with 5 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
+[Architectury Transformer DEBUG] Transforming 5 transformer(s) from E:\Minecraft Modding Workspaces\smart_pick-1.20.x\common\build\devlibs\smart_pick-common-1.0.0-1.20.2-dev.jar to C:\Users\User\AppData\Local\Temp\9253888698191234019.jar: 
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RuntimeMixinRefmapDetector@27d415d9
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.GenerateFakeFabricMod@5c18298f
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@31f924f5
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@5579bb86
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@5204062d
+[Architectury Transformer DEBUG] Transforming from E:\Minecraft Modding Workspaces\smart_pick-1.20.x\common\build\devlibs\smart_pick-common-1.0.0-1.20.2-dev.jar to C:\Users\User\AppData\Local\Temp\9253888698191234019.jar with 5 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing dev/dacommander31/smart_pick/mixin/MinecraftMixin with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing dev/dacommander31/smart_pick/platform/Platform with maxs=true frames=true
@@ -131,20 +131,28 @@
 [Architectury Transformer DEBUG] Writing dev/dacommander31/smart_pick/util/PickBlockMapParser with maxs=true frames=true
 [Architectury Transformer DEBUG] Checking whether /smart_pick-common-common-refmap.json is a mixin config.
 [Architectury Transformer DEBUG] Checking whether /smart_pick.mixins.json is a mixin config.
-[Architectury Transformer DEBUG] Closed File Systems for C:\Users\User\AppData\Local\Temp\6395309655443761569.jar
+[Architectury Transformer DEBUG] Closed File Systems for C:\Users\User\AppData\Local\Temp\9253888698191234019.jar
 [Architectury Transformer] Listening at E:\Minecraft Modding Workspaces\smart_pick-1.20.x\common\build\devlibs\smart_pick-common-1.0.0-1.20.2-dev.jar
-[Architectury Transformer DEBUG] Temporary jar [C:\Users\User\AppData\Local\Temp\6395309655443761569.jar] contains packages: dev.dacommander31.smart_pick.util, dev.dacommander31.smart_pick.platform, dev.dacommander31.smart_pick.mixin
+[Architectury Transformer DEBUG] Temporary jar [C:\Users\User\AppData\Local\Temp\9253888698191234019.jar] contains packages: dev.dacommander31.smart_pick.util, dev.dacommander31.smart_pick.platform, dev.dacommander31.smart_pick.mixin
 [Architectury Transformer DEBUG] Closed File Systems for E:\Minecraft Modding Workspaces\smart_pick-1.20.x\common\build\devlibs\smart_pick-common-1.0.0-1.20.2-dev.jar
 [Architectury Transformer DEBUG] Classpath entry [E:\Minecraft Modding Workspaces\smart_pick-1.20.x\fabric\build\resources\main] contains packages: 
 [Architectury Transformer DEBUG] Transforming from dev/dacommander31/smart_pick/platform/SmartPickPlatform.class to dev/dacommander31/smart_pick/platform/SmartPickPlatform.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing dev/dacommander31/smart_pick/platform/SmartPickPlatform with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed dev/dacommander31/smart_pick/platform/SmartPickPlatform in 634.2 μs
+[Architectury Transformer DEBUG] Transformed dev/dacommander31/smart_pick/platform/SmartPickPlatform in 802.6 μs
 [Architectury Transformer DEBUG] Transforming from dev/dacommander31/smart_pick/platform/Platform.class to dev/dacommander31/smart_pick/platform/Platform.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing dev/dacommander31/smart_pick/platform/Platform with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed dev/dacommander31/smart_pick/platform/Platform in 780.7 μs
+[Architectury Transformer DEBUG] Transformed dev/dacommander31/smart_pick/platform/Platform in 637.6 μs
 [Architectury Transformer DEBUG] Transforming from dev/dacommander31/smart_pick/util/PickBlockCache.class to dev/dacommander31/smart_pick/util/PickBlockCache.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing dev/dacommander31/smart_pick/util/PickBlockCache with maxs=true frames=true
-[Architectury Transformer DEBUG] Transformed dev/dacommander31/smart_pick/util/PickBlockCache in 961.9 μs
+[Architectury Transformer DEBUG] Transformed dev/dacommander31/smart_pick/util/PickBlockCache in 1.017 ms
+[Architectury Transformer DEBUG] Transforming from dev/dacommander31/smart_pick/util/PickBlockMapParser.class to dev/dacommander31/smart_pick/util/PickBlockMapParser.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing dev/dacommander31/smart_pick/util/PickBlockMapParser with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed dev/dacommander31/smart_pick/util/PickBlockMapParser in 2.216 ms
+[Architectury Transformer DEBUG] Transforming from dev/dacommander31/smart_pick/util/ClientBlockTagParser.class to dev/dacommander31/smart_pick/util/ClientBlockTagParser.class with 5 transformer(s) on dev.architectury.transformer.handler.TinyRemapperPreparedTransformerHandler
+[Architectury Transformer DEBUG] Found class transformer
+[Architectury Transformer DEBUG] Writing dev/dacommander31/smart_pick/util/ClientBlockTagParser with maxs=true frames=true
+[Architectury Transformer DEBUG] Transformed dev/dacommander31/smart_pick/util/ClientBlockTagParser in 1.464 ms

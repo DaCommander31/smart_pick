@@ -37,9 +37,7 @@ public class MinecraftMixin {
         assert player != null;
         Inventory inventory = player.getInventory();
         SmartPickPlatform platform = Platform.get();
-        platform.log("test");
         if (stack.isEmpty() || inventory.contains(stack) || player.getAbilities().instabuild || !platform.isEnabled()) return stack;
-        platform.log("test2");
 
         Map<Item, List<Item>> map = PickBlockCache.getCache();
 
