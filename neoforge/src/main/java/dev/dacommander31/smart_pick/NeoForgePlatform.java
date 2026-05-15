@@ -23,6 +23,17 @@ public class NeoForgePlatform implements SmartPickPlatform {
     }
 
     @Override
+    public SmartPickMode mode() {
+        return SmartPickConfig.MODE.get();
+    }
+
+    @Override
+    public boolean prioritizeSilkTouch() {
+        if (!SmartPickConfig.SPEC.isLoaded()) return false;
+        return SmartPickConfig.PRIORITIZE_SILK_TOUCH.getAsBoolean();
+    }
+
+    @Override
     public boolean actionbarMessages() {
         if (!SmartPickConfig.SPEC.isLoaded()) return true;
         return SmartPickConfig.ACTIONBAR_MESSAGES.getAsBoolean();

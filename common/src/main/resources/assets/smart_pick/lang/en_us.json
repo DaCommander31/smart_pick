@@ -1,12 +1,21 @@
 {
   "text.autoconfig.smart_pick.title": "Smart Pick Config",
   "text.autoconfig.smart_pick.option.enabled": "Smart Pick Enabled",
+  "text.autoconfig.smart_pick.option.mode": "Mode",
+  "text.autoconfig.smart_pick.option.prioritizeSilkTouch": "Prioritize Silk Touch",
   "text.autoconfig.smart_pick.option.actionbarMessages": "Display Actionbar Messages",
   "text.autoconfig.smart_pick.option.debugLog": "Log Debug Messages",
 
   "smart_pick.configuration.enabled": "Smart Pick Enabled",
+  "smart_pick.configuration.mode": "Mode",
+  "smart_pick.configuration.prioritizeSilkTouch": "Prioritize Silk Touch",
   "smart_pick.configuration.actionbarMessages": "Display Actionbar Messages",
   "smart_pick.configuration.debugLog": "Log Debug Messages",
 
-  "smart_pick.pick": "Picked block not found. Close match selected."
+  "smart_pick.pick_block": "Picked block not found. Close match selected.",
+  "smart_pick.pick_tool": "Picked matching tool.",
+  "smart_pick.change_mode": "Changed Smart Pick mode to \"%s\".",
+  "key.smart_pick.mode": "Change Smart Pick Mode",
+  "smart_pick_resource_pack_not_found_screen.title": "Smart Pick Resource Pack Not Found",
+  "smart_pick_resource_pack_not_found_screen.prompt": "Do you wish to go to the download page?"
 }

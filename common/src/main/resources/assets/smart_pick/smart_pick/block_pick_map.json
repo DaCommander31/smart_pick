@@ -6,13 +6,12 @@
     "granite"
   ],
 
-  "cobblestone": "stone",
-
-  "dirt": [
-    "grass_block",
-    "coarse_dirt",
-    "rooted_dirt"
+  "cobblestone": [
+    "stone",
+    "mossy_cobblestone"
   ],
+
+  "#dirt": "#dirt",
 
   "grass_block": [
     "dirt",

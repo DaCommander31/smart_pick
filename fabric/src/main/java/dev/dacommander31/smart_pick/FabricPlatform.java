@@ -21,6 +21,16 @@ public class FabricPlatform implements SmartPickPlatform {
     }
 
     @Override
+    public SmartPickMode mode() {
+        return SmartPickClient.getConfig().mode;
+    }
+
+    @Override
+    public boolean prioritizeSilkTouch() {
+        return SmartPickClient.getConfig().prioritizeSilkTouch;
+    }
+
+    @Override
     public boolean actionbarMessages() {
         return SmartPickClient.getConfig().actionbarMessages;
     }
